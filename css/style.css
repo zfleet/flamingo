@@ -48,7 +48,7 @@ h5 {
 }
 
 p {
-    color: #828282;
+    color: #242424;
     letter-spacing: 0.8px;
     line-height: 28px;
     font-size: 1.5em;
@@ -415,7 +415,7 @@ footer {
 
 /* footer section  */
 footer {
-    background: #111112;
+    background: #f68d80;
 }
 
 footer .copyright-text {

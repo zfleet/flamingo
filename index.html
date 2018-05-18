@@ -25,7 +25,14 @@
           rel="stylesheet">
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- preloader section -->
 <section class="preloader">
     <div class="sk-circle">
@@ -56,11 +63,10 @@
                         tout-petits !</h3>
                     <a href="#about" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
                        data-wow-delay="0.8s">En savoir plus</a>
-                    <a href="#" data-toggle="modal" data-target="#modal1"
-                       class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="1.0s">S'abonner à
-                        l'infolettre</a>
+                    <a href="#contact" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
+                       data-wow-delay="0.8s">Nous contacter</a>
                     <div style="margin-bottom: 267px;">
-                        <h3 class="wow fadeInUp" data-wow-delay="0.6s">Lancement à venir ! </h3>
+                        <h3 class="wow fadeInUp" data-wow-delay="0.6s"> Lancement à venir !</h3>
                     </div>
                 </div>
             </div>
@@ -89,7 +95,7 @@
                         </div>
                         <div class="media-body">
                             <h2 class="media-heading">Choisissez</h2>
-                            <p>Faites votre sélection en ligne directement sur notre site.</p>
+                            <p>Faites votre sélection de vêtements.</p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +107,7 @@
                         </div>
                         <div class="media-body">
                             <h2 class="media-heading">Profitez</h2>
-                            <p>Recevez votre boîte et profitez des vêtements choisis !</p>
+                            <p>Recevez les vêtements choisis et profitez-en !</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +119,7 @@
                         </div>
                         <div class="media-body">
                             <h2 class="media-heading">Échangez</h2>
-                            <p>Renvoyez les vêtements dans la boîte et choisissez-en d'autres !</p>
+                            <p>Retournez les vêtements et choisissez-en d'autres.</p>
                         </div>
                     </div>
                 </div>
@@ -145,15 +151,13 @@
                 <div class="about-thumb">
                     <div class="section-title">
                         <h2 class="wow fadeIn" data-wow-delay="0.2s">Notre histoire</h2>
-                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">L'entreprise est née naturellement pour deux
-                            raisons essentielles :</h5>
-                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">D'une part, nous avons constaté à quel point
-                            habiller un enfant peut coûter cher, surtout les premiers mois quand bébé grandit à une
-                            allure folle, et nous avons tendance à accumuler beaucoup (trop !) de stock dans nos
+                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">Nous avons fondé l'entreprise sur la base de deux constats :</h5>
+                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">D'une part, nous savons à quel point
+                            habiller un enfant peut coûter cher, surtout au cours les premiers mois quand bébé grandit à une
+                            allure folle, et que nous avons tendance à accumuler beaucoup (trop !) de stock dans nos
                             armoires, que nous n'utilisons pas toujours.</h5>
-                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">D'autre part, nous souhaitions faire un geste
-                            concret pour notre planète, abîmée par une industrie textile qui est la deuxième plus
-                            polluante, mais aussi pour l'humain.</h5>
+                        <h5 class="wow fadeInUp" data-wow-delay="0.4s">D'autre part, l'industrie textile est la deuxième plus
+                            polluante de la planète...alors pourquoi ne pas louer ses vêtements, d'autant plus à un moment où ils sont très peu portés ?</h5>
                     </div>
                 </div>
 
@@ -163,13 +167,11 @@
                     <div class="section-title">
                         <div class="section-title">
                             <h2 class="wow fadeIn" data-wow-delay="0.2s">Mission & valeurs</h2>
-                            <h5 class="wow fadeIn" data-wow-delay="0.4s">Nous nous donnons comme mission de vous
-                                simplifier la vie en vous offrant l'accès à une gamme de vêtements élargie et de
-                                qualité, à un prix raisonnable. Ainsi, vous pouvez vous faire plaisir en habillant bébé
-                                avec de beaux morceaux à petit prix sans accumuler de stock inutile.</h5>
-                            <h5 class="wow fadeInUp" data-wow-delay="0.4s">Notre entreprise est basée sur l'économie
-                                circulaire pour contribuer à la protection de l'environnement et de l'humain. Nous
-                                cherchons également à mettre en avant le talent de créateurs locaux. En louant vos
+                            <h5 class="wow fadeIn" data-wow-delay="0.4s">MaBoîte@Look vous
+                                simplifie la vie en vous offrant un accès à une gamme élargie de vêtements de
+                                qualité, à un prix raisonnable. Vous pouvez ainsi magasiner de beaux morceaux pendant la croissance de bébé, sans accumuler de stock. Louer une garde-robe évolutive, c'est la nouvelle façon d'acheter ! </h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.4s">Notre entreprise est aussi basée sur l'économie
+                                circulaire pour contribuer à la protection de l'environnement et de l'humain. En louant vos
                                 vêtements chez MaBoîte@Look, vous y contribuez aussi !</h5>
                         </div>
                     </div>
@@ -188,25 +190,7 @@
                 <div class="section-title">
                     <h1 class="wow fadeInUp" data-wow-delay="0.3s">Contactez-nous</h1>
                     <p class="wow fadeInUp" data-wow-delay="0.6s">Vous avez des questions ? Écrivez-nous !</p>
-                </div>
-                <div class="contact-form wow fadeInUp" data-wow-delay="1.0s">
-                    <form id="contact-form" method="post" action="#">
-                        <div class="col-md-6 col-sm-6">
-                            <input name="name" type="text" class="form-control" placeholder="Nom" required>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <input name="email" type="email" class="form-control" placeholder="Courriel" required>
-                        </div>
-                        <div class="col-md-12 col-sm-12">
-                            <textarea name="message" class="form-control" placeholder="Message" rows="6"
-                                      required></textarea>
-                        </div>
-                        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-                            <input name="submit" type="submit" class="form-control submit" id="submit"
-                                   value="Envoyer">
-                        </div>
-                    </form>
-                </div>
+                    <div class="fb-page" data-wow-delay="0.8s" data-href="https://www.facebook.com/MaBoiteALook/" data-tabs="timeline" data-width="500" data-height="100" data-small-header="false" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/MaBoiteALook/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MaBoiteALook/">Ma Boîte à Look</a></blockquote></div>                </div>
             </div>
 
         </div>
@@ -223,57 +207,16 @@
                 <path d="M0 0 L50 100 L100 0 Z"></path>
             </svg>
 
-            <div class="col-md-4 col-sm-6">
-                <h2>comila</h2>
-                <div class="wow fadeInUp" data-wow-delay="0.3s">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus lacus nulla, eget varius
-                        justo tristique ut. Etiam a tellus magna.</p>
-                    <p class="copyright-text">Copyright &copy; 2016 Your Company <br>
-                        Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Templatemo</a>
-                    </p>
+            <div class="col-md-offset-4 col-sm-offset-6 col-md-4 col-sm-6 ">
+                <h2 style="text-align: center">MaBoîte@Look</h2>
+                <div style="text-align: center" class="wow fadeInUp" data-wow-delay="0.3s">
+                    <p>Entreprise québécoise écoresponsable</p>
+                    <p class="copyright-text">Copyright &copy; 2018 MaBoîte@Look</p>
                 </div>
             </div>
-
-            <div class="col-md-1 col-sm-1"></div>
-
-            <div class="col-md-4 col-sm-5">
-                <h2>Our Studio</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.6s">
-                    120-240 aliquam augue libero,<br>
-                    Convallis in vulputate 10220 <br>
-                    San Francisco, CA, USA
-                </p>
-                <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.9s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="1.2s"></a></li>
-                    <li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="1.4s"></a></li>
-                    <li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="1.6s"></a></li>
-                </ul>
-            </div>
-
         </div>
     </div>
 </footer>
-
-<!-- modal -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content modal-popup">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h2 class="modal-title">Infolettre</h2>
-            </div>
-            <form action="#" method="post">
-                <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Nom prénom">
-                <input name="email" type="text" class="form-control" id="email" placeholder="Courriel">
-                <input name="submit" type="submit" class="form-control" id="submit" value="S'inscrire">
-            </form>
-            <p>Merci de votre visite !</p>
-        </div>
-    </div>
-</div>
-
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
@@ -287,6 +230,37 @@
 <script src="js/wow.min.js"></script>
 <!--<script src="js/smoothscroll.js"></script>-->
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#submit").click(function(e) {
+            e.preventDefault();
+
+            var name = $("#fullname").val(),
+                email = $("#email").val(),
+                message = $("#message").val();
+
+            $.ajax({
+                type: "POST",
+                url: 'https://7u583pmarl.execute-api.us-east-1.amazonaws.com/prod',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    'name': name,
+                    'email': email,
+                    'message': message
+                }),
+                success: function(res){
+                    $('#form-response').text('Email was sent.');
+                },
+                error: function(){
+                    $('#form-response').text('Error.');
+                }
+            });
+
+        })
+
+    });
+</script>
 
 </body>
 </html>
