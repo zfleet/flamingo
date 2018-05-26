@@ -2,7 +2,7 @@
  /* jQuery Pre loader
   -----------------------------------------------*/
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(200); // set duration in brackets    
 });
 
 
@@ -13,8 +13,7 @@ $(document).ready(function() {
   $(function() {
     $('body').vegas({
         slides: [
-            { src: 'images/slide-1.jpg' },
-            { src: 'images/slide-2.jpg' }
+            { src: 'images/slide-1.jpg' }
         ],
         timer: false,
         transition: [ 'zoomOut', ]
