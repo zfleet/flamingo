@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="css/vegas.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bad+Script|Caveat|Handlee|Kalam"
+    <link href="https://fonts.googleapis.com/css?family=Handlee"
           rel="stylesheet">
 </head>
 <body>
@@ -62,9 +61,9 @@
                     <img src="images/logo-bord-rose.png" width="250" height="250"/>
                     <h3 class="wow fadeInUp" data-wow-delay="0.6s">Simplifiez-vous la vie en louant les vêtements de vos
                         tout-petits !</h3>
-                    <a href="#feature" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
+                    <a id="feature-button" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
                        data-wow-delay="0.8s">En savoir plus</a>
-                    <a href="#contact" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
+                    <a id="contact-button" class="btn btn-lg btn-success smoothScroll wow fadeInUp hidden-xs"
                        data-wow-delay="0.8s">Nous contacter</a>
                     <div style="margin-bottom: 267px;">
                         <h3 class="wow fadeInUp" data-wow-delay="0.6s"> Lancement à venir !</h3>
@@ -80,9 +79,13 @@
 <section id="feature">
     <div class="container">
         <div class="row">
-
+            <div class="col-md-12 col-sm-12">
+            <h1 style="text-align: center">Le concept</h1>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-12 col-sm-12" style="margin-bottom: 30px;">
-                <iframe class="center-block" width="560" height="315"
+                <iframe id="concept-video" class="center-block" width="560" height="315"
                         src="https://www.youtube.com/embed/alHyoOsle5Y?rel=0" frameborder="0"
                         allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
@@ -229,39 +232,7 @@
 <script src="js/vegas.min.js"></script>
 
 <script src="js/wow.min.js"></script>
-<!--<script src="js/smoothscroll.js"></script>-->
 <script src="js/custom.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        $("#submit").click(function(e) {
-            e.preventDefault();
-
-            var name = $("#fullname").val(),
-                email = $("#email").val(),
-                message = $("#message").val();
-
-            $.ajax({
-                type: "POST",
-                url: 'https://7u583pmarl.execute-api.us-east-1.amazonaws.com/prod',
-                contentType: 'application/json',
-                data: JSON.stringify({
-                    'name': name,
-                    'email': email,
-                    'message': message
-                }),
-                success: function(res){
-                    $('#form-response').text('Email was sent.');
-                },
-                error: function(){
-                    $('#form-response').text('Error.');
-                }
-            });
-
-        })
-
-    });
-</script>
-
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 </body>
 </html>
